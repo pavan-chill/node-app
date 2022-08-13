@@ -5,12 +5,7 @@ pipeline {
     
   stages {
         
-    stage('Git') {
-      steps {
-        sh 'echo "pipeline started"'
-        
-      }
-    }
+    
      
     stage('Build') {
       steps {
