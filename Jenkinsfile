@@ -24,7 +24,8 @@ pipeline {
       steps {
         build job: 'test'
         
-        
+      }
+     }  
     stage('cleanup') {
       steps {
         build job: 'cleanup_action'
