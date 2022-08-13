@@ -26,11 +26,5 @@ pipeline {
         
       }
      }  
-    stage('cleanup') {
-      steps {
-        build job: 'cleanup_action'
-         
-      }
-    }
   }
 }
