@@ -20,7 +20,13 @@ pipeline {
         build job: 'test'
       }
     }
-        
+
+     stage('Deploy') {
+      steps {
+        build job: 'deploy'
+      }
+    }   
+
     stage('cleanup') {
        steps {
          build job: 'cleanup_action'
